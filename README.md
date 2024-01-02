@@ -1,7 +1,3 @@
-# about-me
-
-<template>
-  <br />
   <h1>Profile</h1>
   <h3>Daichi　Koga</h3>
   <p>Software engineer and IT consultant.
@@ -34,13 +30,6 @@
   </h5>
   <br />
 
-  <!-- <p>
-    2024/01-present<br />
-    <a href="https://www.accenture.com/jp-ja" target="_blank" rel="noopener">Accenture Inc.</a><br />
-    ITコンサルタント<br />
-  </p>
-  <br /> -->
-
   <h1>Certification</h1>
   <p>
     ・Certified Securities Broker Representative<br/>
@@ -67,5 +56,3 @@
     ・<a href="https://www.facebook.com/daichikg/" target="_blank" rel="noopener">Facebook</a><br />
     ・<a href="https://www.linkedin.com/in/daichi-koga-84347721b/" target="_blank" rel="noopener">Linkedin</a><br />
   </p>
-  <br />
-</template>
