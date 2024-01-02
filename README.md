@@ -1,7 +1,7 @@
   <h1>Profile</h1>
   <h3>Daichi　Koga</h3>
   <p>Software engineer and IT consultant.
-    I have been working for Simplex since 2023 as a key developer and led an enhancement project of an inheritance business system for a major securities firm. He has been an independent sole proprietor since 2024.
+    I have been working for Simplex since 2023 as a key developer and led an enhancement project of an inheritance business system for a major securities firm. I have been an independent sole proprietor since 2024.
   </p>
   <br />
 
