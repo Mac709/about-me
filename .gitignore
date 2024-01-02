@@ -1,6 +1,4 @@
-# Logs
 /node_modules
-
-# Editor directories and files
-/vscode/*
-.idea
+/dist
+/tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
