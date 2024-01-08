@@ -25,9 +25,7 @@
   <a href="https://www.simplex.inc/" target="_blank" rel="noopener">Simplex Inc.</a><br />
   ITコンサルタント<br />
   <h5>
-    大手証券向けの
-    <a href="https://www.simplex.inc/news/2021/1443/" target="_blank" rel="noopener">相続業務システム</a>
-    にて保守・運用に従事。主に、エンハンス案件を主に担当し大規模なシステムの開発を経験。開発ツールとして、Vue,Spring,SQL,AWS,JP1等を使用。
+    大手証券向けの相続業務システムにて保守・運用に従事。主に、エンハンス案件を担当し大規模なシステムの開発を経験。開発ツールとして、Vue,Spring,SQL,AWS,JP1等を使用。
   </h5>
   <br />
 

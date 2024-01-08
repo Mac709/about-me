@@ -26,9 +26,7 @@
   <a href="https://www.simplex.inc/" target="_blank" rel="noopener">Simplex Inc.</a><br />
   IT consultant<br />
   <h5>
-    For major securities firms,developed a web system related to
-    <a href="https://www.simplex.inc/news/2021/1443/" target="_blank" rel="noopener">Inheritance Business System</a>
-    aand engaged in maintenance and operation of the company's systems. Mainly in charge of enhancement projects and experienced in developing large scale systems.In the project, I used Vue, Spring, SQL, AWS, JP1, etc. as development tools.
+    For major securities firms,developed a web system related to Inheritance Business System and engaged in maintenance and operation of the company's systems. Mainly in charge of enhancement projects and experienced in developing large scale systems.In the project, I used Vue, Spring, SQL, AWS, JP1, etc. as development tools.
   </h5>
   <br />
 
