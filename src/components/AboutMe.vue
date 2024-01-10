@@ -13,11 +13,13 @@ defineProps<{
       <h5>Mac709/about-me</h5>
     </h3>
   </div>
-  <div style="margin-top: 5%;">
+  <div class="greetings" style="margin-top: 5%;">
+    <h5>
     This project is maintained by 
-    <a href="https://github.com/Mac709/about-me" target="_blank" rel="noopener">Mac709</a>
+    <a href="https://github.com/Mac709/about-me" target="_blank" rel="noopener">Mac709</a><br/>
+    Hosted on Github Pages
+    </h5>
   </div>
-  Hosted on Github Pages
 </template>
 
 <style scoped>
@@ -33,12 +35,14 @@ h3 {
 }
 
 .greetings h1,
+.greetings h5,
 .greetings h3 {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
   .greetings h1,
+  .greetings h5,
   .greetings h3 {
     text-align: left;
   }
