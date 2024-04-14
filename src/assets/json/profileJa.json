@@ -1,0 +1,59 @@
+{
+  "users": [{
+    "name": "古賀　大地",
+    "introduction": "ソフトウェア・エンジニア"
+  }],
+
+  "careers": [{
+    "hp":"https://www.simplex.inc/",
+    "term":"2023/04-2023/12",
+    "company": "Simplex Inc.", 
+    "role": "Software engineer",
+    "detail": "証券業界にて顧客情報システムを開発。Vue,Spring,SQL,AWS,Oracle等を経験。"
+  }, {
+    "hp":"https://www.accenture.com/jp-ja",
+    "term":"2024/01-present",
+    "company": "Accenture Inc.", 
+    "role": "Software engineer",
+    "detail": "エネルギー業界でCIS（顧客情報システム）を開発。JavaやOracle等を経験"
+  }],
+  
+  "education": [{
+    "term":"2017/04-2021/03",
+    "university": "九州大学", 
+    "role": "化学 (学士)"
+  }, {
+    "term":"2021/04-2023/03",
+    "university": "東京大学大学院", 
+    "role": "化学 (修士)"
+  }],
+  
+  "internship": [{
+    "hp":"https://librus.co.jp/",
+    "term":"2022/03-2023/03",
+    "company": "Librus Inc.", 
+    "role": "Software engineer",
+    "detail": "固定資産管理システムに関するWebシステムを開発。主に、UIUXにて設計/開発を担当。ReactやFastAPI、AWS、postresql、Docker等を経験。"
+  }, {
+    "hp":"hhttps://www.comsq.com/",
+    "term":"2022/06-2023/03",
+    "company": "Comsquare Inc.", 
+    "role": "Software engineer",
+    "detail": "自社アプリに関するデモサイトを開発。php、amazon lightsail、wordpress, google analytics等を経験。"
+  }],
+  
+  "certification": [{
+    "title":"AWS CLF",
+    "date":"2023/01"
+  }, {
+    "title":"Azure Fundamentals",
+    "date":"2024/03"
+  }, {
+    "title":"Oracle DBA Silver",
+    "date":"2024/04"
+  }, {
+    "title":"証券外務員1種",
+    "date":"2022/06"
+  }
+]
+}

@@ -1,0 +1,62 @@
+{
+  "users": [{
+    "name": "Daichi　Koga",
+    "introduction": "Software engineer"
+  }, {
+    "name": "jiro",
+    "age": 10
+  }],
+
+  "careers": [{
+    "hp":"https://www.simplex.inc/",
+    "term":"2023/04-2023/12",
+    "company": "Simplex Inc.", 
+    "role": "Software engineer",
+    "detail": "For major securities firms,I developed CIS (Customer Information ystem). In the project, I used Vue, Spring, SQL, AWS, JP1, Oracle etc. as development tools."
+  }, {
+    "hp":"https://www.accenture.com/jp-ja",
+    "term":"2024/01-present",
+    "company": "Accenture Inc.", 
+    "role": "Software engineer",
+    "detail": "For a energy industry, I am developing CIS (Customer Information ystem). Also, I am having a sort of engineering skills, like Java, Oracle."
+  }],
+  
+  "education": [{
+    "term":"2017/04-2021/03",
+    "university": "Kyushu University", 
+    "role": "Chemical Researcher (Bachelor)"
+  }, {
+    "term":"2021/04-2023/03",
+    "university": "University of Tokyo", 
+    "role": "Chemical Researcher (Master)"
+  }],
+  
+  "internship": [{
+    "hp":"https://librus.co.jp/",
+    "term":"2022/03-2023/03",
+    "company": "Librus Inc.", 
+    "role": "Software engineer",
+    "detail": "Developed a web system related to Fixed asset management ledger Mainly in charge of design/development in UIUX. Development tools used React, FastAPI, AWS, postresql, and Docker."
+  }, {
+    "hp":"hhttps://www.comsq.com/",
+    "term":"2022/06-2023/03",
+    "company": "Comsquare Inc.", 
+    "role": "Software engineer",
+    "detail": "I was building a demo site there. The tools used there were wordpress, amazon lightsail, php, google analytics etc."
+  }],
+  
+  "certification": [{
+    "title":"AWS CLF",
+    "date":"2023/01"
+  }, {
+    "title":"Azure Fundamentals",
+    "date":"2024/03"
+  }, {
+    "title":"Oracle DBA Silver",
+    "date":"2024/04"
+  }, {
+    "title":"証券外務員1種",
+    "date":"2022/06"
+  }
+]
+}

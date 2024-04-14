@@ -1,52 +1,60 @@
+<script setup lang="ts">
+import profile from './../assets/json/profileJa.json';
+</script>
+
 <template>
   <br />
-  <h1>プロフィール</h1>
-  <h3>古賀　大地</h3>
-  <p>ソフトウェア・エンジニア、ITコンサルタント。Librus
-    Inc.で固定資産管理台帳のWebアプリ構築に従事して初めてシステムの基礎を学ぶ。2023年度からシンプレクスにて大手証券向けの相続業務システムの保守・運用に従事し、主要な開発者としてエンハンス案件を主導。2024年度から独立して、個人事業主として活動している。
-  </p>
+  <h1>Profile</h1>
+  <h3>{{ profile.users[0].name }}</h3>
+  <p>{{ profile.users[0].introduction }}</p>
   <br />
 
-  <h1>経歴</h1>
-  <p>
-    2022/03-2023/03
-  </p>
-  <a href="https://librus.co.jp/" target="_blank" rel="noopener">Librus Inc.</a><br />
-  ソフトウェア・エンジニア<br />
-  <h5>
-    <a href="https://biz.moneyforward.com/accounting/basic/15274/" target="_blank" rel="noopener">固定資産管理台帳</a>
-    に関するWebシステムを開発。主に、UIUXにて設計/開発を担当。開発ツールとして、ReactやFastAPI、AWS、postresql、Docker等を使用。
-  </h5>
+  <h1>Career</h1>
+  <div v-for="career in profile.careers">
+    <p>{{ career.term }}</p>
+    <a href="{career.hp}" target="_blank" rel="noopener">
+      {{ career.company }}
+    </a><br />
+    {{ career.role }}
+    <br />
+    <h5>
+      {{ career.detail }}
+    </h5>
+    <br />
+  </div>
+
+  <h1>Education</h1>
+  <div v-for="education in profile.education">
+    <p>{{ education.term }}</p>
+    {{ education.university }}<br />
+    <h5>
+      {{ education.role }}
+    </h5>
+    <br />
+  </div>
+
+  <h1>Internship</h1>
+  <div v-for="internship in profile.internship">
+    <p>{{ internship.term }}</p>
+    <a href="{internship.hp}" target="_blank" rel="noopener">
+      {{ internship.company }}
+    </a><br />
+    {{ internship.role }}
+    <br />
+    <h5>
+      {{ internship.detail }}
+    </h5>
+    <br />
+  </div>
+
+  <h1>Certification</h1>
+  <li v-for="certification in profile.certification">
+      {{ certification.title }} ({{ certification.date }})
+  </li>
   <br />
 
-  <p>
-    2023/04-2023/12
-  </p>
-  <a href="https://www.simplex.inc/" target="_blank" rel="noopener">Simplex Inc.</a><br />
-  ITコンサルタント<br />
-  <h5>
-    大手証券向けの相続業務システムにて保守・運用に従事。主に、エンハンス案件を担当し大規模なシステムの開発を経験。開発ツールとして、Vue,Spring,SQL,AWS,JP1等を使用。
-  </h5>
-  <br />
-
-  <!-- <p>
-    2024/01-present<br />
-    <a href="https://www.accenture.com/jp-ja" target="_blank" rel="noopener">Accenture Inc.</a><br />
-    ITコンサルタント<br />
-  </p>
-  <br /> -->
-
-  <h1>資格・認定</h1>
-  <p>
-    ・証券外務員一種<br />
-    ・AWS cloud practionaer<br />
-    ・基本情報技術者<br />
-    ・TOEIC 805<br />
-  </p>
-  <br />
-
-  <h1>ポートフォリオ</h1>
-  <h3>・農業向けSNSアプリ</h3>
+  <h1>Portfolio</h1>
+  <h3>農業向けSNSアプリ</h3>
   <p>
     -Ios版は
     <a href="https://x.gd/IisSK" target="_blank" rel="noopener">こちら</a><br />
@@ -56,10 +64,8 @@
   </p>
   <br />
 
-  <h1>お問合せ</h1>
+  <h1>Contact</h1>
   <p>
-    ・<a href="https://twitter.com/daichi_kog97916" target="_blank" rel="noopener">X</a><br />
-    ・<a href="https://www.facebook.com/daichikg/" target="_blank" rel="noopener">Facebook</a><br />
     ・<a href="https://www.linkedin.com/in/daichi-koga-84347721b/" target="_blank" rel="noopener">Linkedin</a><br />
   </p>
   <br />
