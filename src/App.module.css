@@ -1,0 +1,65 @@
+.header {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+  position: relative;
+}
+
+.langToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.langBtn {
+  padding: 0.4rem 0.7rem;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.langBtn:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.langBtn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.langBtn.active {
+  background: hsla(160, 100%, 37%, 1);
+  color: #000;
+}
+
+.langBtn.active:hover {
+  background: hsla(160, 100%, 42%, 1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 0.5rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: hsla(160, 100%, 37%, 1);
+}
+
+.title {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.2rem 0 0;
+}

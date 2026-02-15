@@ -1,0 +1,67 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: hsla(160, 100%, 37%, 1);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid hsla(160, 100%, 37%, 0.3);
+}
+
+.term {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.25rem;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.25rem 0;
+}
+
+.achievement {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+}
+
+.achievementLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: hsla(160, 100%, 37%, 0.8);
+  margin-bottom: 0.25rem;
+}
+
+.achievementLink {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+}
+
+.achievementLink:hover {
+  color: hsla(160, 100%, 37%, 1);
+}

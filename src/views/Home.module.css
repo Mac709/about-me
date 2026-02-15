@@ -1,0 +1,204 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: hsla(160, 100%, 37%, 1);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profileCard {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.profileCard h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.profileCard p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid hsla(160, 100%, 37%, 0.3);
+}
+
+.term {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.25rem;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.item h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item h3 a:hover {
+  color: hsla(160, 100%, 37%, 1);
+}
+
+.role {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.25rem 0;
+}
+
+.detail {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0.5rem 0 0;
+  line-height: 1.5;
+}
+
+.achievement {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+}
+
+.achievementLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: hsla(160, 100%, 37%, 0.8);
+  margin-bottom: 0.25rem;
+}
+
+.achievementLink {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+}
+
+.achievementLink:hover {
+  color: hsla(160, 100%, 37%, 1);
+}
+
+.certList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.certList li {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.certDate {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.portfolioCard {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.portfolioCard h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+  color: hsla(160, 100%, 37%, 1);
+}
+
+.portfolioDesc {
+  margin: 0 0 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 1rem;
+}
+
+.appLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.appLink {
+  padding: 0.5rem 1.25rem;
+  background: hsla(160, 100%, 37%, 0.2);
+  border: 1px solid hsla(160, 100%, 37%, 0.5);
+  border-radius: 4px;
+  color: hsla(160, 100%, 37%, 1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.appLink:hover {
+  background: hsla(160, 100%, 37%, 0.3);
+}
+
+.snsLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.snsLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.snsLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: hsla(160, 100%, 37%, 0.5);
+}
+
+.contactText {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.contactText a {
+  color: hsla(160, 100%, 37%, 1);
+}
+
+.location {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+}

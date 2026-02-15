@@ -1,47 +1,53 @@
 {
   "users": [{
     "name": "古賀　大地",
-    "introduction": "ソフトウェア・エンジニア"
+    "introduction": "東京大学大学院修了。研究で培った論理的思考とエンジニアリングスキルを活かし、金融・官公庁向けシステム開発に従事するフルスタックエンジニア。"
   }],
 
   "careers": [{
     "hp":"https://www.simplex.inc/",
     "term":"2023/04-2023/12",
-    "company": "Simplex Inc.", 
-    "role": "Software engineer",
-    "detail": "証券業界にて顧客情報システムを開発。Vue,Spring,SQL,AWS,Oracle等を経験。"
+    "company": "Simplex Inc.",
+    "role": "Software Engineer",
+    "detail": "証券業界にて顧客情報システムを開発。Vue, Spring, SQL, AWS, Oracle等を経験。"
   }, {
     "hp":"https://www.accenture.com/jp-ja",
     "term":"2024/01-present",
-    "company": "Accenture Inc.", 
-    "role": "Software engineer",
-    "detail": "エネルギー業界で顧客情報システムを開発。JavaやOracle等を経験"
+    "company": "Accenture Inc.",
+    "role": "Software Engineer / Infrastructure Engineer",
+    "detail": "エネルギー業界で顧客情報システムを開発（Java, Oracle等）。2025/07-2026/02は官公庁向けシステム基盤刷新プロジェクトにてAWSを活用したインフラエンジニアとして環境構築に従事。"
   }],
-  
+
   "education": [{
     "term":"2017/04-2021/03",
-    "university": "九州大学", 
-    "role": "化学 (学士)"
+    "university": "九州大学",
+    "role": "工学部 応用化学科 (学士)",
+    "achievement": "日本化学会第101回春季大会（2021/3/19）口頭発表",
+    "achievementTitle": "ポリマーマトリックス中におけるカチオン性π電子系の集合挙動とイオン伝導性評価",
+    "achievementUrl": "https://sites.google.com/view/fujigaya-lab/home/past-conference"
   }, {
     "term":"2021/04-2023/03",
-    "university": "東京大学大学院", 
-    "role": "化学 (修士)"
+    "university": "東京大学大学院",
+    "role": "新領域創成科学研究科 物質系専攻 (修士)",
+    "achievement": "論文出版",
+    "achievementTitle": "Detecting single-point isomeric differences in polymer chains by MOF column chromatography",
+    "achievementUrl": "https://pubs.rsc.org/en/content/articlelanding/2024/cc/d4cc04902k"
   }],
-  
+
   "internship": [{
     "hp":"https://librus.co.jp/",
     "term":"2022/03-2023/03",
-    "company": "Librus Inc.", 
-    "role": "Software engineer",
-    "detail": "固定資産管理システムに関するWebシステムを開発。主に、UIUXにて設計/開発を担当。ReactやFastAPI、AWS、postresql、Docker等を経験。"
+    "company": "Librus Inc.",
+    "role": "Software Engineer",
+    "detail": "固定資産管理システムに関するWebシステムを開発。主に、UIUXにて設計/開発を担当。React, FastAPI, AWS, PostgreSQL, Docker等を経験。"
   }, {
-    "hp":"hhttps://www.comsq.com/",
+    "hp":"https://www.comsq.com/",
     "term":"2022/06-2023/03",
-    "company": "Comsquare Inc.", 
-    "role": "Software engineer",
-    "detail": "自社アプリに関するデモサイトを開発。php、amazon lightsail、wordpress, google analytics等を経験。"
+    "company": "Comsquare Inc.",
+    "role": "Software Engineer",
+    "detail": "自社アプリに関するデモサイトを開発。PHP, Amazon Lightsail, WordPress, Google Analytics等を経験。"
   }],
-  
+
   "certification": [{
     "title":"AWS CLF",
     "date":"2023/01"
@@ -54,6 +60,5 @@
   }, {
     "title":"証券外務員1種",
     "date":"2022/06"
-  }
-]
+  }]
 }

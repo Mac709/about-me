@@ -1,0 +1,64 @@
+{
+  "users": [{
+    "name": "Daichi Koga",
+    "introduction": "Full-stack engineer with a Master's degree from the University of Tokyo. Leveraging logical thinking and analytical skills cultivated through research to develop financial and government systems."
+  }],
+
+  "careers": [{
+    "hp":"https://www.simplex.inc/",
+    "term":"2023/04-2023/12",
+    "company": "Simplex Inc.",
+    "role": "Software Engineer",
+    "detail": "Developed customer information systems for the securities industry. Experienced with Vue, Spring, SQL, AWS, Oracle, etc."
+  }, {
+    "hp":"https://www.accenture.com/jp-ja",
+    "term":"2024/01-present",
+    "company": "Accenture Inc.",
+    "role": "Software Engineer / Infrastructure Engineer",
+    "detail": "Developed customer information systems for the energy industry (Java, Oracle, etc.). From 2025/07-2026/02, worked as an AWS infrastructure engineer on a government system infrastructure renewal project."
+  }],
+
+  "education": [{
+    "term":"2017/04-2021/03",
+    "university": "Kyushu University",
+    "role": "Faculty of Engineering, Applied Chemistry (Bachelor's)",
+    "achievement": "Oral Presentation at CSJ 101st Annual Meeting (2021/3/19)",
+    "achievementTitle": "Collective Behavior of Cationic π-Electron Systems in Polymer Matrices and Ionic Conductivity Evaluation",
+    "achievementUrl": "https://sites.google.com/view/fujigaya-lab/home/past-conference"
+  }, {
+    "term":"2021/04-2023/03",
+    "university": "The University of Tokyo",
+    "role": "Graduate School of Frontier Sciences, Dept. of Advanced Materials Science (Master's)",
+    "achievement": "Published Paper",
+    "achievementTitle": "Detecting single-point isomeric differences in polymer chains by MOF column chromatography",
+    "achievementUrl": "https://pubs.rsc.org/en/content/articlelanding/2024/cc/d4cc04902k"
+  }],
+
+  "internship": [{
+    "hp":"https://librus.co.jp/",
+    "term":"2022/03-2023/03",
+    "company": "Librus Inc.",
+    "role": "Software Engineer",
+    "detail": "Developed web systems for fixed asset management. Led UI/UX design and development. Experienced with React, FastAPI, AWS, PostgreSQL, Docker, etc."
+  }, {
+    "hp":"https://www.comsq.com/",
+    "term":"2022/06-2023/03",
+    "company": "Comsquare Inc.",
+    "role": "Software Engineer",
+    "detail": "Developed demo sites for in-house applications. Experienced with PHP, Amazon Lightsail, WordPress, Google Analytics, etc."
+  }],
+
+  "certification": [{
+    "title":"AWS CLF",
+    "date":"2023/01"
+  }, {
+    "title":"Azure Fundamentals",
+    "date":"2024/03"
+  }, {
+    "title":"Oracle DBA Silver",
+    "date":"2024/04"
+  }, {
+    "title":"Securities Sales Representative Class 1",
+    "date":"2022/06"
+  }]
+}
