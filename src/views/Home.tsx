@@ -123,9 +123,7 @@ const Home: React.FC = () => {
         <p className={styles.contactText}>
           {labels.contactText.split('LinkedIn')[0]}
           <a href="https://www.linkedin.com/in/daichi-koga-84347721b/" target="_blank" rel="noopener">LinkedIn</a>
-          {labels.contactText.includes('メール') ? 'または' : ' or '}
-          <a href="mailto:your-email@example.com">Email</a>
-          {labels.contactText.split('Email')[1] || '.'}
+          {labels.contactText.split('LinkedIn')[1]}
         </p>
         <p className={styles.location}>{labels.location}</p>
       </section>

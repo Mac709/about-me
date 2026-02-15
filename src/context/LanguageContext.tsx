@@ -46,7 +46,7 @@ const labelsJa: Labels = {
   portfolioTech: '使用技術: Vue, Ionic, Firebase, Stripe',
   sns: 'SNS',
   contact: 'Contact',
-  contactText: 'お気軽にLinkedInまたはメールでご連絡ください。',
+  contactText: 'お気軽にLinkedInでご連絡ください。',
   location: '所在地: 東京',
   tabs: {
     home: 'Home',
@@ -68,7 +68,7 @@ const labelsEn: Labels = {
   portfolioTech: 'Tech: Vue, Ionic, Firebase, Stripe',
   sns: 'SNS',
   contact: 'Contact',
-  contactText: 'Feel free to reach out via LinkedIn or Email.',
+  contactText: 'Feel free to reach out via LinkedIn.',
   location: 'Based in Tokyo, Japan',
   tabs: {
     home: 'Home',

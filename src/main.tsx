@@ -2,16 +2,16 @@ import './assets/main.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { LanguageProvider } from './context/LanguageContext'
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('app')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <LanguageProvider>
         <App />
       </LanguageProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 )

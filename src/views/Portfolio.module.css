@@ -21,6 +21,11 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--color-border);
   border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.portfolioCard:last-child {
+  margin-bottom: 0;
 }
 
 .portfolioCard h3 {
