@@ -12,10 +12,16 @@
     "detail": "Developed customer information systems for the securities industry. Experienced with Vue, Spring, SQL, AWS, Oracle, etc."
   }, {
     "hp":"https://www.accenture.com/jp-ja",
-    "term":"2024/01-present",
+    "term":"2024/01-2026/02",
     "company": "Accenture Inc.",
     "role": "Software Engineer / Infrastructure Engineer",
     "detail": "Developed customer information systems for the energy industry (Java, Oracle, etc.). From 2025/07-2026/02, worked as an AWS infrastructure engineer on a government system infrastructure renewal project."
+  }, {
+    "hp":"https://translead.co.jp/",
+    "term":"2026/03-present",
+    "company": "Translead Inc.",
+    "role": "Software Engineer",
+    "detail": "Developing system integrations and BizDev tools. Primarily focused on infrastructure (AWS, GCP), handling tailored requests from global clients."
   }],
 
   "education": [{
