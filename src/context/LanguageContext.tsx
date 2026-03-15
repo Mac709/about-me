@@ -1,9 +1,6 @@
-import React, { createContext, useContext, useState, useCallback } from 'react'
+import React, { createContext, useContext } from 'react'
 import type { Profile } from '../types/profile'
-import profileJa from '../assets/json/profileJa.json'
 import profileEn from '../assets/json/profileEn.json'
-
-type Language = 'ja' | 'en'
 
 interface Labels {
   profile: string
@@ -28,35 +25,11 @@ interface Labels {
 }
 
 interface LanguageContextType {
-  language: Language
-  toggleLanguage: () => void
   profile: Profile
   labels: Labels
 }
 
-const labelsJa: Labels = {
-  profile: 'Profile',
-  career: 'Career',
-  education: 'Education',
-  internship: 'Internship',
-  certification: 'Certification',
-  portfolio: 'Portfolio',
-  portfolioTitle: '農業向けSNSアプリ',
-  portfolioDesc: '農業業界向けソーシャルネットワーキングアプリケーション',
-  portfolioTech: '使用技術: Vue, Ionic, Firebase, Stripe',
-  sns: 'SNS',
-  contact: 'Contact',
-  contactText: 'お気軽にLinkedInでご連絡ください。',
-  location: '所在地: 東京',
-  tabs: {
-    home: 'Home',
-    work: 'Work Experience',
-    sns: 'SNS',
-    contact: 'Contact'
-  }
-}
-
-const labelsEn: Labels = {
+const labels: Labels = {
   profile: 'Profile',
   career: 'Career',
   education: 'Education',
@@ -81,17 +54,10 @@ const labelsEn: Labels = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('ja')
-
-  const toggleLanguage = useCallback(() => {
-    setLanguage(prev => prev === 'ja' ? 'en' : 'ja')
-  }, [])
-
-  const profile = (language === 'ja' ? profileJa : profileEn) as Profile
-  const labels = language === 'ja' ? labelsJa : labelsEn
+  const profile = profileEn as Profile
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, profile, labels }}>
+    <LanguageContext.Provider value={{ profile, labels }}>
       {children}
     </LanguageContext.Provider>
   )

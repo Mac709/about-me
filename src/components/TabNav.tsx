@@ -1,26 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useLanguage } from '../context/LanguageContext'
 import styles from './TabNav.module.css'
 
 interface Tab {
   path: string
-  labelJa: string
-  labelEn: string
+  label: string
   end?: boolean
 }
 
+const tabs: Tab[] = [
+  { path: '/', label: 'Home', end: true },
+  { path: '/work', label: 'Career' },
+  { path: '/education', label: 'Education' },
+  { path: '/portfolio', label: 'Portfolio' },
+  { path: '/sns', label: 'Contact' }
+]
+
 const TabNav: React.FC = () => {
-  const { language } = useLanguage()
-
-  const tabs: Tab[] = [
-    { path: '/', labelJa: 'Home', labelEn: 'Home', end: true },
-    { path: '/work', labelJa: 'Career', labelEn: 'Career' },
-    { path: '/education', labelJa: 'Education', labelEn: 'Education' },
-    { path: '/portfolio', labelJa: 'Portfolio', labelEn: 'Portfolio' },
-    { path: '/sns', labelJa: 'Contact', labelEn: 'Contact' }
-  ]
-
   return (
     <nav className={styles.tabNav}>
       {tabs.map((tab: Tab) => (
@@ -32,7 +28,7 @@ const TabNav: React.FC = () => {
             `${styles.tab} ${isActive ? styles.active : ''}`
           }
         >
-          {language === 'ja' ? tab.labelJa : tab.labelEn}
+          {tab.label}
         </NavLink>
       ))}
     </nav>

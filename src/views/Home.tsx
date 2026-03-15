@@ -14,16 +14,14 @@ interface AppLink {
 }
 
 interface PortfolioItem {
-  titleJa: string
-  titleEn: string
-  descJa: string
-  descEn: string
+  title: string
+  desc: string
   tech: string
   links: AppLink[]
 }
 
 const Home: React.FC = () => {
-  const { language, profile, labels } = useLanguage()
+  const { profile, labels } = useLanguage()
 
   const socialLinks: SocialLink[] = [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/daichi-koga-84347721b/', icon: '💼' },
@@ -110,10 +108,8 @@ const Home: React.FC = () => {
         <h2 className={styles.sectionTitle}>{labels.portfolio}</h2>
         {[
           {
-            titleJa: '農業向けSNSアプリ',
-            titleEn: 'Agriculture SNS App',
-            descJa: '農業業界向けソーシャルネットワーキングアプリケーション',
-            descEn: 'Social networking application for agriculture industry',
+            title: 'Agriculture SNS App',
+            desc: 'Social networking application for agriculture industry',
             tech: 'Vue, Ionic, Firebase, Stripe',
             links: [
               { platform: 'iOS', url: 'https://x.gd/IisSK' },
@@ -121,20 +117,16 @@ const Home: React.FC = () => {
             ]
           },
           {
-            titleJa: 'Yield Daily',
-            titleEn: 'Yield Daily',
-            descJa: '日次利回り計算ツール',
-            descEn: 'Daily yield calculation tool',
+            title: 'Yield Daily',
+            desc: 'Daily yield calculation tool',
             tech: 'GitHub Project',
             links: [
               { platform: 'GitHub', url: 'https://github.com/Mac709/yield_daily' }
             ]
           },
           {
-            titleJa: 'HRDev Scout AI',
-            titleEn: 'HRDev Scout AI',
-            descJa: 'AI搭載の人材スカウトツール',
-            descEn: 'AI-powered HR scouting tool',
+            title: 'HRDev Scout AI',
+            desc: 'AI-powered HR scouting tool',
             tech: 'GitHub Project',
             links: [
               { platform: 'GitHub', url: 'https://github.com/Mac709/hrdev-scout-ai' }
@@ -142,8 +134,8 @@ const Home: React.FC = () => {
           }
         ].map((item: PortfolioItem, index: number) => (
           <div key={index} className={styles.portfolioCard}>
-            <h3>{language === 'ja' ? item.titleJa : item.titleEn}</h3>
-            <p className={styles.portfolioDesc}>{language === 'ja' ? item.descJa : item.descEn}</p>
+            <h3>{item.title}</h3>
+            <p className={styles.portfolioDesc}>{item.desc}</p>
             <p className={styles.tech}>{item.tech}</p>
             <div className={styles.appLinks}>
               {item.links.map((link: AppLink, linkIndex: number) => (

@@ -6,33 +6,28 @@ interface SocialLink {
   name: string
   url: string
   icon: string
-  descriptionJa: string
-  descriptionEn: string
+  description: string
 }
 
 const SNS: React.FC = () => {
-  const { language, labels } = useLanguage()
+  const { labels } = useLanguage()
 
   const socialLinks: SocialLink[] = [
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/daichi-koga-84347721b/',
       icon: '💼',
-      descriptionJa: 'プロフェッショナルネットワーク',
-      descriptionEn: 'Professional Network'
+      description: 'Professional Network'
     },
     {
       name: 'GitHub',
       url: 'https://github.com/Mac709',
       icon: '💻',
-      descriptionJa: 'コードリポジトリ',
-      descriptionEn: 'Code Repository'
+      description: 'Code Repository'
     }
   ]
 
-  const contactIntro = language === 'ja'
-    ? 'ご質問やお仕事のご相談など、お気軽にご連絡ください。'
-    : 'Feel free to reach out if you have any questions or would like to connect.'
+  const contactIntro = 'Feel free to reach out if you have any questions or would like to connect.'
 
   return (
     <main className={styles.container}>
@@ -51,7 +46,7 @@ const SNS: React.FC = () => {
               <span className={styles.icon}>{link.icon}</span>
               <div>
                 <h3>{link.name}</h3>
-                <p>{language === 'ja' ? link.descriptionJa : link.descriptionEn}</p>
+                <p>{link.description}</p>
               </div>
             </a>
           ))}
