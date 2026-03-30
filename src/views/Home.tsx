@@ -1,5 +1,7 @@
 import React from 'react'
 import { useLanguage } from '../context/LanguageContext'
+import { portfolioItems } from '../data/portfolio'
+import type { PortfolioItem, AppLink } from '../data/portfolio'
 import styles from './Home.module.css'
 
 interface SocialLink {
@@ -8,16 +10,9 @@ interface SocialLink {
   icon: string
 }
 
-interface AppLink {
-  platform: string
-  url: string
-}
-
-interface PortfolioItem {
-  title: string
-  desc: string
-  tech: string
-  links: AppLink[]
+interface SkillCategory {
+  category: string
+  skills: string[]
 }
 
 const Home: React.FC = () => {
@@ -25,7 +20,16 @@ const Home: React.FC = () => {
 
   const socialLinks: SocialLink[] = [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/daichi-koga-84347721b/', icon: '💼' },
-    { name: 'GitHub', url: 'https://github.com/Mac709', icon: '💻' }
+    { name: 'GitHub', url: 'https://github.com/Mac709', icon: '💻' },
+    { name: 'Dev.to', url: 'https://dev.to/daichi_koga_4de7a4be20102', icon: '✍️' }
+  ]
+
+  const skillCategories: SkillCategory[] = [
+    { category: 'Frontend', skills: ['Vue', 'React', 'Ionic', 'TypeScript'] },
+    { category: 'Backend', skills: ['Java', 'Spring', 'Python', 'FastAPI', 'PHP'] },
+    { category: 'Cloud / Infra', skills: ['AWS', 'GCP', 'Docker', 'GitHub Actions'] },
+    { category: 'Database', skills: ['Oracle', 'PostgreSQL', 'Firebase'] },
+    { category: 'AI / ML', skills: ['LangChain', 'OpenAI API', 'RAG'] }
   ]
 
   return (
@@ -36,6 +40,23 @@ const Home: React.FC = () => {
         <div className={styles.profileCard}>
           <h3>{profile.users[0].name}</h3>
           <p>{profile.users[0].introduction}</p>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Skills</h2>
+        <div className={styles.skillGrid}>
+          {skillCategories.map((cat: SkillCategory, index: number) => (
+            <div key={index} className={styles.skillCategory}>
+              <h3 className={styles.skillCategoryTitle}>{cat.category}</h3>
+              <div className={styles.skillTags}>
+                {cat.skills.map((skill: string, i: number) => (
+                  <span key={i} className={styles.skillTag}>{skill}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -106,37 +127,15 @@ const Home: React.FC = () => {
       {/* Portfolio */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>{labels.portfolio}</h2>
-        {[
-          {
-            title: 'Agriculture SNS App',
-            desc: 'Social networking application for agriculture industry',
-            tech: 'Vue, Ionic, Firebase, Stripe',
-            links: [
-              { platform: 'iOS', url: 'https://x.gd/IisSK' },
-              { platform: 'Android', url: 'https://play.google.com/store/apps/details?id=io.ionic.starter.village' }
-            ]
-          },
-          {
-            title: 'Yield Daily',
-            desc: 'Daily yield calculation tool',
-            tech: 'GitHub Project',
-            links: [
-              { platform: 'GitHub', url: 'https://github.com/Mac709/yield_daily' }
-            ]
-          },
-          {
-            title: 'HRDev Scout AI',
-            desc: 'AI-powered HR scouting tool',
-            tech: 'GitHub Project',
-            links: [
-              { platform: 'GitHub', url: 'https://github.com/Mac709/hrdev-scout-ai' }
-            ]
-          }
-        ].map((item: PortfolioItem, index: number) => (
+        {portfolioItems.map((item: PortfolioItem, index: number) => (
           <div key={index} className={styles.portfolioCard}>
             <h3>{item.title}</h3>
             <p className={styles.portfolioDesc}>{item.desc}</p>
-            <p className={styles.tech}>{item.tech}</p>
+            <div className={styles.techTags}>
+              {item.tech.map((t: string, i: number) => (
+                <span key={i} className={styles.techTag}>{t}</span>
+              ))}
+            </div>
             <div className={styles.appLinks}>
               {item.links.map((link: AppLink, linkIndex: number) => (
                 <a

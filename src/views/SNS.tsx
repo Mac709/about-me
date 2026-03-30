@@ -24,6 +24,12 @@ const SNS: React.FC = () => {
       url: 'https://github.com/Mac709',
       icon: '💻',
       description: 'Code Repository'
+    },
+    {
+      name: 'Dev.to',
+      url: 'https://dev.to/daichi_koga_4de7a4be20102',
+      icon: '✍️',
+      description: 'Technical Blog'
     }
   ]
 

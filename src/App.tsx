@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <header className={styles.header}>
         <img alt="D" className={styles.logo} src={logo} />
         <h1 className={styles.name}>Daichi Koga</h1>
-        <p className={styles.title}>Software Engineer</p>
+        <p className={styles.title}>Full-stack Engineer | AWS | React | Java | AI/LLM</p>
       </header>
       <TabNav />
       <Routes>
