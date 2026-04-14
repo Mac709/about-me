@@ -1,6 +1,10 @@
 import React, { createContext, useContext } from 'react'
+import { useLocation } from 'react-router-dom'
 import type { Profile } from '../types/profile'
+import profileJa from '../assets/json/profileJa.json'
 import profileEn from '../assets/json/profileEn.json'
+
+type Language = 'ja' | 'en'
 
 interface Labels {
   profile: string
@@ -25,11 +29,13 @@ interface Labels {
 }
 
 interface LanguageContextType {
+  language: Language
+  basePath: string
   profile: Profile
   labels: Labels
 }
 
-const labels: Labels = {
+const labelsEn: Labels = {
   profile: 'Profile',
   career: 'Career',
   education: 'Education',
@@ -51,13 +57,39 @@ const labels: Labels = {
   }
 }
 
+const labelsJa: Labels = {
+  profile: 'プロフィール',
+  career: '職歴',
+  education: '学歴',
+  internship: 'インターン',
+  certification: '資格',
+  portfolio: 'ポートフォリオ',
+  portfolioTitle: '農業向けSNSアプリ',
+  portfolioDesc: '農業業界向けソーシャルネットワーキングアプリケーション',
+  portfolioTech: '使用技術: Vue, Ionic, Firebase, Stripe',
+  sns: 'SNS',
+  contact: 'お問い合わせ',
+  contactText: 'お気軽にLinkedInでご連絡ください。',
+  location: '所在地: 東京',
+  tabs: {
+    home: 'Home',
+    work: '職歴',
+    sns: 'SNS',
+    contact: 'お問い合わせ'
+  }
+}
+
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const profile = profileEn as Profile
+  const location = useLocation()
+  const language: Language = location.pathname.startsWith('/ja') ? 'ja' : 'en'
+  const basePath = language === 'ja' ? '/ja' : ''
+  const profile = (language === 'ja' ? profileJa : profileEn) as Profile
+  const labels = language === 'ja' ? labelsJa : labelsEn
 
   return (
-    <LanguageContext.Provider value={{ profile, labels }}>
+    <LanguageContext.Provider value={{ language, basePath, profile, labels }}>
       {children}
     </LanguageContext.Provider>
   )

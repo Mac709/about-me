@@ -16,7 +16,7 @@ interface SkillCategory {
 }
 
 const Home: React.FC = () => {
-  const { profile, labels } = useLanguage()
+  const { language, profile, labels } = useLanguage()
 
   const socialLinks: SocialLink[] = [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/daichi-koga-84347721b/', icon: '💼' },
@@ -129,8 +129,8 @@ const Home: React.FC = () => {
         <h2 className={styles.sectionTitle}>{labels.portfolio}</h2>
         {portfolioItems.map((item: PortfolioItem, index: number) => (
           <div key={index} className={styles.portfolioCard}>
-            <h3>{item.title}</h3>
-            <p className={styles.portfolioDesc}>{item.desc}</p>
+            <h3>{language === 'ja' ? item.titleJa : item.titleEn}</h3>
+            <p className={styles.portfolioDesc}>{language === 'ja' ? item.descJa : item.descEn}</p>
             <div className={styles.techTags}>
               {item.tech.map((t: string, i: number) => (
                 <span key={i} className={styles.techTag}>{t}</span>

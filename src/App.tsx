@@ -9,6 +9,16 @@ import SNS from './views/SNS'
 import styles from './App.module.css'
 import logo from './assets/D-character.png'
 
+const AppRoutes: React.FC = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/work" element={<WorkExperience />} />
+    <Route path="/education" element={<Education />} />
+    <Route path="/portfolio" element={<Portfolio />} />
+    <Route path="/sns" element={<SNS />} />
+  </Routes>
+)
+
 const App: React.FC = () => {
   return (
     <>
@@ -19,11 +29,8 @@ const App: React.FC = () => {
       </header>
       <TabNav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<WorkExperience />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/sns" element={<SNS />} />
+        <Route path="/*" element={<AppRoutes />} />
+        <Route path="/ja/*" element={<AppRoutes />} />
       </Routes>
     </>
   )

@@ -5,7 +5,7 @@ import type { PortfolioItem, AppLink } from '../data/portfolio'
 import styles from './Portfolio.module.css'
 
 const Portfolio: React.FC = () => {
-  const { labels } = useLanguage()
+  const { language, labels } = useLanguage()
 
   return (
     <main className={styles.container}>
@@ -13,8 +13,8 @@ const Portfolio: React.FC = () => {
         <h2 className={styles.sectionTitle}>{labels.portfolio}</h2>
         {portfolioItems.map((item: PortfolioItem, index: number) => (
           <div key={index} className={styles.portfolioCard}>
-            <h3>{item.title}</h3>
-            <p className={styles.portfolioDesc}>{item.desc}</p>
+            <h3>{language === 'ja' ? item.titleJa : item.titleEn}</h3>
+            <p className={styles.portfolioDesc}>{language === 'ja' ? item.descJa : item.descEn}</p>
             <div className={styles.techTags}>
               {item.tech.map((t: string, i: number) => (
                 <span key={i} className={styles.techTag}>{t}</span>

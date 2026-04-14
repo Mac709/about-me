@@ -6,34 +6,40 @@ interface SocialLink {
   name: string
   url: string
   icon: string
-  description: string
+  descriptionEn: string
+  descriptionJa: string
 }
 
+const socialLinks: SocialLink[] = [
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/daichi-koga-84347721b/',
+    icon: '💼',
+    descriptionEn: 'Professional Network',
+    descriptionJa: 'プロフェッショナルネットワーク'
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/Mac709',
+    icon: '💻',
+    descriptionEn: 'Code Repository',
+    descriptionJa: 'コードリポジトリ'
+  },
+  {
+    name: 'Dev.to',
+    url: 'https://dev.to/daichi_koga_4de7a4be20102',
+    icon: '✍️',
+    descriptionEn: 'Technical Blog',
+    descriptionJa: '技術ブログ'
+  }
+]
+
 const SNS: React.FC = () => {
-  const { labels } = useLanguage()
+  const { language, labels } = useLanguage()
 
-  const socialLinks: SocialLink[] = [
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/daichi-koga-84347721b/',
-      icon: '💼',
-      description: 'Professional Network'
-    },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/Mac709',
-      icon: '💻',
-      description: 'Code Repository'
-    },
-    {
-      name: 'Dev.to',
-      url: 'https://dev.to/daichi_koga_4de7a4be20102',
-      icon: '✍️',
-      description: 'Technical Blog'
-    }
-  ]
-
-  const contactIntro = 'Feel free to reach out if you have any questions or would like to connect.'
+  const contactIntro = language === 'ja'
+    ? 'ご質問やお仕事のご相談など、お気軽にご連絡ください。'
+    : 'Feel free to reach out if you have any questions or would like to connect.'
 
   return (
     <main className={styles.container}>
@@ -52,7 +58,7 @@ const SNS: React.FC = () => {
               <span className={styles.icon}>{link.icon}</span>
               <div>
                 <h3>{link.name}</h3>
-                <p>{link.description}</p>
+                <p>{language === 'ja' ? link.descriptionJa : link.descriptionEn}</p>
               </div>
             </a>
           ))}
