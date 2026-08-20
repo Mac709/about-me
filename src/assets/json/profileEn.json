@@ -1,67 +1,67 @@
 {
   "users": [{
     "name": "Daichi Koga",
-    "introduction": "Full-stack engineer with a Master's degree from the University of Tokyo. Leveraging logical thinking and analytical skills cultivated through research to develop financial and government systems."
+    "introduction": "Software Engineer with a Master's degree from the University of Tokyo and 3+ years of professional experience delivering enterprise systems across financial services, energy, government, and global B2B sectors. Hands-on across the full stack — from Java/Spring Boot and Vue/React applications to AWS/GCP cloud infrastructure — with a track record of taking ownership end-to-end, from requirements definition through production operation."
   }],
 
   "careers": [{
-    "hp":"https://www.simplex.inc/",
-    "term":"2023/04-2023/12",
-    "company": "Simplex Inc.",
-    "role": "Software Engineer",
-    "detail": "Developed customer information systems for the securities industry. Experienced with Vue, Spring, SQL, AWS, Oracle, etc."
+    "hp":"https://translead.co.jp/",
+    "term":"2025/07-present",
+    "company": "Translead Inc.",
+    "role": "Software Engineer / Technical Lead",
+    "detail": "Lead a 2-person engineering team delivering cloud-based system integrations for domestic and international clients, serving as the primary technical point of contact. Designed and built secure AWS API infrastructure (authentication, rate limiting, audit logging), delivered tailored integrations such as PDF generation, inbound email ingestion, and bidirectional third-party APIs, and own IaC, CI/CD, monitoring, and cost optimization across AWS and GCP. Also drive technical pre-sales and consulting."
   }, {
     "hp":"https://www.accenture.com/jp-ja",
     "term":"2024/01-2026/02",
     "company": "Accenture Inc.",
     "role": "Software Engineer / Infrastructure Engineer",
-    "detail": "Developed customer information systems for the energy industry (Java, Oracle, etc.). From 2025/07-2026/02, worked as an AWS infrastructure engineer on a government system infrastructure renewal project."
+    "detail": "2024/01-2025/06: Developed and maintained customer information system features for the energy industry in Java with Oracle/MySQL, releasing roughly one feature per month from design through production, owning JP1 job scheduling and batch performance tuning. 2025/07-2026/02: Led cloud infrastructure design and provisioning on AWS for a large-scale public sector project, covering multi-environment build-out, disaster recovery and high-availability design, monitoring and alerting, and security hardening to meet strict compliance requirements."
   }, {
-    "hp":"https://translead.co.jp/",
-    "term":"2025/07-present",
-    "company": "Translead Inc.",
-    "role": "Software Engineer",
-    "detail": "Developing system integrations and BizDev tools. Primarily focused on infrastructure (AWS, GCP), handling tailored requests from global clients."
+    "hp":"https://www.simplex.inc/",
+    "term":"2023/04-2023/12",
+    "company": "Simplex Inc.",
+    "role": "Software Engineer (Full-Stack)",
+    "detail": "Single-handedly owned 2 features end-to-end in parallel — requirements definition, design, implementation, and testing — for a customer information system in the securities industry, delivering at a pace of about 2 features per month. Worked across Vue.js, Spring Boot, SQL, AWS, and Oracle, engaging directly with business stakeholders."
   }],
 
   "education": [{
-    "term":"2017/04-2021/03",
-    "university": "Kyushu University",
-    "role": "Faculty of Engineering, Applied Chemistry (Bachelor's)",
-    "achievement": "Oral Presentation at CSJ 101st Annual Meeting (2021/3/19)",
-    "achievementTitle": "Collective Behavior of Cationic π-Electron Systems in Polymer Matrices and Ionic Conductivity Evaluation",
-    "achievementUrl": "https://sites.google.com/view/fujigaya-lab/home/past-conference"
-  }, {
     "term":"2021/04-2023/03",
     "university": "The University of Tokyo",
     "role": "Graduate School of Frontier Sciences, Dept. of Advanced Materials Science (Master's)",
     "achievement": "Published Paper",
     "achievementTitle": "Detecting single-point isomeric differences in polymer chains by MOF column chromatography",
     "achievementUrl": "https://pubs.rsc.org/en/content/articlelanding/2024/cc/d4cc04902k"
+  }, {
+    "term":"2017/04-2021/03",
+    "university": "Kyushu University",
+    "role": "Faculty of Engineering, Applied Chemistry (Bachelor's)",
+    "achievement": "Oral Presentation at CSJ 101st Annual Meeting (2021/3/19)",
+    "achievementTitle": "Collective Behavior of Cationic π-Electron Systems in Polymer Matrices and Ionic Conductivity Evaluation",
+    "achievementUrl": "https://sites.google.com/view/fujigaya-lab/home/past-conference"
   }],
 
   "internship": [{
-    "hp":"https://librus.co.jp/",
-    "term":"2022/03-2023/03",
-    "company": "Librus Inc.",
-    "role": "Software Engineer",
-    "detail": "Developed web systems for fixed asset management. Led UI/UX design and development. Experienced with React, FastAPI, AWS, PostgreSQL, Docker, etc."
-  }, {
     "hp":"https://www.comsq.com/",
     "term":"2022/06-2023/03",
     "company": "Comsquare Inc.",
-    "role": "Software Engineer",
-    "detail": "Developed demo sites for in-house applications. Experienced with PHP, Amazon Lightsail, WordPress, Google Analytics, etc."
+    "role": "Software Engineer Intern",
+    "detail": "Built demo sites for in-house applications using PHP, Amazon Lightsail, and WordPress. Integrated Google Analytics for usage tracking and product insights."
+  }, {
+    "hp":"https://librus.co.jp/",
+    "term":"2022/03-2023/03",
+    "company": "Librus Inc.",
+    "role": "Software Engineer Intern",
+    "detail": "Developed a web-based fixed-asset management system, leading UI/UX design and front-end development. Tech stack: React, FastAPI, AWS, PostgreSQL, Docker."
   }],
 
   "certification": [{
-    "title":"AWS SAA",
+    "title":"AWS Certified Solutions Architect – Associate",
     "date":"2026/03"
   }, {
-    "title":"Azure Fundamentals",
+    "title":"Microsoft Certified: Azure Fundamentals",
     "date":"2024/03"
   }, {
-    "title":"Oracle DBA Silver",
+    "title":"Oracle Database Administration Silver",
     "date":"2024/04"
   }, {
     "title":"Securities Sales Representative Class 1",
