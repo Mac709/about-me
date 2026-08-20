@@ -27,8 +27,8 @@ const Home: React.FC = () => {
   const skillCategories: SkillCategory[] = [
     { category: 'Frontend', skills: ['Vue', 'React', 'Ionic', 'TypeScript'] },
     { category: 'Backend', skills: ['Java', 'Spring', 'Python', 'FastAPI', 'PHP'] },
-    { category: 'Cloud / Infra', skills: ['AWS', 'GCP', 'Docker', 'GitHub Actions'] },
-    { category: 'Database', skills: ['Oracle', 'PostgreSQL', 'Firebase'] },
+    { category: 'Cloud / Infra', skills: ['AWS', 'GCP', 'Azure', 'Docker', 'GitHub Actions'] },
+    { category: 'Database', skills: ['Oracle', 'PostgreSQL', 'MySQL', 'Firebase'] },
     { category: 'AI / ML', skills: ['LangChain', 'OpenAI API', 'RAG'] }
   ]
 
