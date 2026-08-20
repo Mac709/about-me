@@ -6,7 +6,7 @@
 
   "careers": [{
     "hp":"https://translead.co.jp/",
-    "term":"2025/07-present",
+    "term":"2026/03-present",
     "company": "Translead株式会社",
     "role": "Software Engineer / Technical Lead",
     "detail": "2名のエンジニアチームをリードし、国内外の顧客向けにクラウドベースのシステム連携を提供。顧客との技術窓口を担当。認証・レート制限・監査ログを備えたセキュアなAWS API基盤を設計・構築し、PDF帳票生成、メール受信パイプライン、サードパーティとの双方向API連携など個別要望に対応。AWS・GCPのIaC、CI/CD、監視、コスト最適化を担当し、技術的なプリセールス・コンサルティングも推進。"
